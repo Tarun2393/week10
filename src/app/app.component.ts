@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'coursework-week10';
+  
+    serverName ='Test Server';
+
+    serverCreated = false;
+
+    servers = [ ];
+
+
+    onCreatedServer() {
+      this.serverCreated = true;
+
+      this.servers.push(this.serverName);
+
+  }
+
+
+
+
+
 }
